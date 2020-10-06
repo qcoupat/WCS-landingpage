@@ -1,0 +1,145 @@
+<!-- Afin de valider ton code HTML, fais un copier-coller de ce dernier et rends-toi sur https://validator.w3.org/#validate_by_input. 
+Click sur l'onglet "Validate by Direct Input" et colle ton code HTML, click ensuite sur le bouton "Check", et tu verras ensuite (si tu en as) les erreurs HTML s'afficher plus bas.
+Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.com/valider-vos-codes-html-et-css-sur-validator-w3-org/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Wild Circus</title>
+        <link href="WCS.css" rel="stylesheet" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
+        </style>
+    </head>
+
+    <body>
+        <header class="page__header">
+            <nav class="navbar__menu">
+                <ol id="navbar__list"></ol>
+            </nav>
+            <div class="accueil">
+                <h1 class="titre">Wild Circus</h1>
+                <p>Welcome to the Wild Circus, the worldwide famous circus !</p>
+                <img class="logo" src="https://i.ibb.co/gR3BX9D/logo-WCS-copie.png" alt="logo Wild circus" />
+            </div>
+            <nav>
+                <!--<ul>            
+            <li><a>Performances</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Prices</a></li>
+            <li><a>Contact</a></li>
+        </ul> -->
+            </nav>
+        </header>
+
+        <section id="section1" data-nav="Section 1" class="your-active-class">
+            <img class="performances-logo" src="https://i.ibb.co/FY6xVhJ/tent.png" alt="logo performances" />
+            <h2>Performances</h2>
+            <ul>
+                <!-- performance 1 -->
+                <li>
+                    <hr />
+                    <h3>Laugh</h3>
+                    <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+                </li>
+                <!-- performance 2 -->
+                <li>
+                    <hr />
+                    <h3>Dream</h3>
+                    <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+                </li>
+                <!-- performance 3 -->
+                <li>
+                    <hr />
+                    <h3>Marvel at</h3>
+                    <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="section2" data-nav="Section 2">
+            <img class="about-logo" src="https://i.ibb.co/r4zDp7s/clown.png" alt="logo aboutus" />
+            <h2>About Us</h2>
+            <p>
+                The Wild Circus company has been created in 1920 by the Fonzi Family and today the third generation is at the reigns our company.<br />
+                We are proud to celebrate our 100th year of existence this year !<br />
+                <br />
+                To celebrate this exceptionnal year, the Wild Circus company and all its staff are doing a <strong>MAJOR EUROPEAN</strong> tour all across the capitals of Europe.<br />
+                For this exceptionnal event, sales are going to be available as of next <strong>Monday</strong> ! We highly recommend booking quickly !<br />
+                <br />
+                To do so, please send us a request via the 'Contact us' form or by calling 000-000-000.<br />
+                <br />
+                <strong>We look forward to having you !</strong>
+            </p>
+        </section>
+
+        <div>
+            <img class="circus-ticket" src="https://i.ibb.co/PZBR6Q4/circus.png" alt="logo ticket" />
+            <h2>Prices</h2>
+        </div>
+        <section id="section3" data-nav="Section 3">
+          <h3>Our exceptionnal prices for this anniversary year !</h3>
+            <table class="tableau">
+                <thead>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Adults</td>
+                        <td>Children - less than 12 years old</td>
+                        <td>Groups (more than 10 people)</td>
+                        <td>Schools</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Weeks without wednesdays</td>
+                        <td>20€</td>
+                        <td>9€</td>
+                        <td>12€*</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>Weekends including wednesdays</td>
+                        <td>25€</td>
+                        <td>9€</td>
+                        <td>10€*</td>
+                        <td>Free</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="group-quotes">*For groups, please contact-us at 000-000-000 for personnalized quotes!</p>
+        </section>
+
+        <section id="section4" data-nav="Section 4">
+            <h2>Contact Us</h2>
+            <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name" />
+                </div>
+                <div>
+                    <label for="mail">e-mail :</label>
+                    <input type="email" id="mail" name="user_mail" />
+                </div>
+                <div>
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Envoyer le message</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <div class="footer">
+                Wild Circus by Quentin Coupat - France-IOI: <a href="http://www.france-ioi.org/user/perso.php?sLogin=qcoupat" target="_blank"> France IOI qcoupat</a> - LinkedIn:
+                <a href="https://www.linkedin.com/in/quentincoupat/" target="_blank"> Quentin Coupat </a> - <a href="https://wildcodeschool.fr" target="_blank">Wild Code School </a> - 10 Mai 2020
+            </div>
+        </footer>
+        <script src="WCS.js"></script>
+    </body>
+</html>
